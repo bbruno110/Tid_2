@@ -13,7 +13,21 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      keyframes:{
+        'rotation-l':{
+          '0%':{transform: 'perspective(600px) rotateY(0deg);opacity: 1;'},
+          '100%':{transform: 'perspective(600px) rotateY(-180deg); opacity: 1;'}
+        },
+        'rotation-r':{
+          '0%':{transform: 'perspective(600px) rotateY(-180deg); opacity: 1;'},
+          '100%':{transform: 'perspective(600px) rotateY(0deg); opacity: 1;'}
+        }
+      },
+      animation:{'rotation-l':'rotation-l 0.3s linear alternate','rotation-r':'rotation-r 0.3s linear alternate' }
     },
+    fontFamily:{
+      Montserrat:["Montserrat", "sans-serif"]
+    }
   },
   plugins: [],
 }
