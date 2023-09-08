@@ -15,15 +15,15 @@ const config: Config = {
       },
       keyframes:{
         'rotation-l':{
-          '0%':{transform: 'perspective(600px) rotateY(0deg);opacity: 1;'},
-          '100%':{transform: 'perspective(600px) rotateY(-180deg); opacity: 1;'}
+          '0%':{transform: 'perspective(900px) rotateY(0deg);opacity: 1;'},
+          '100%':{transform: 'perspective(900px) rotateY(-180deg); opacity: 1;'}
         },
         'rotation-r':{
-          '0%':{transform: 'perspective(600px) rotateY(-180deg); opacity: 1;'},
-          '100%':{transform: 'perspective(600px) rotateY(0deg); opacity: 1;'}
+          '0%':{transform: 'perspective(900px) rotateY(-180deg); opacity: 1;'},
+          '100%':{transform: 'perspective(900px) rotateY(0deg); opacity: 1;'}
         }
       },
-      animation:{'rotation-l':'rotation-l 0.3s linear alternate','rotation-r':'rotation-r 0.3s linear alternate' }
+      animation:{'rotation-l':'rotation-l 0.2s linear alternate','rotation-r':'rotation-r 0.2s linear alternate' }
     },
     fontFamily:{
       Montserrat:["Montserrat", "sans-serif"]
